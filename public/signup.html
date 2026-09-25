@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Join | LinkedIn Clone</title><link rel="stylesheet" href="/css/style.css"></head>
+<body class="auth-page">
+<header class="auth-header"><a class="auth-logo" href="/login.html">in</a></header>
+<main class="auth-main"><section class="auth-card">
+<h1>Join LinkedIn Clone</h1><p class="subtitle">Create an account to start connecting.</p>
+<div id="authMessage" hidden></div>
+<form id="signupForm" class="auth-form">
+<div class="form-grid">
+<div class="field"><label>First name</label><input name="firstName" required maxlength="40"></div>
+<div class="field"><label>Last name</label><input name="lastName" required maxlength="40"></div>
+<div class="field full"><label>Email</label><input name="email" type="email" autocomplete="email" required></div>
+<div class="field full"><label>Password</label><input name="password" type="password" minlength="8" autocomplete="new-password" required></div>
+<div class="field full"><label>Confirm password</label><input name="confirmPassword" type="password" minlength="8" autocomplete="new-password" required></div>
+<div class="field full"><label>Headline (optional)</label><input name="headline" placeholder="e.g. Computer Science Student"></div>
+<div class="field full"><label>Location (optional)</label><input name="location" placeholder="e.g. Kerala, India"></div>
+</div>
+<p class="terms">By clicking Agree & Join, you agree to the demo site's terms and privacy policy.</p>
+<button class="auth-submit" type="submit">Agree & Join</button>
+</form>
+<p class="auth-footer">Already have an account? <a href="/login.html">Sign in</a></p>
+</section></main>
+<script src="/js/auth.js"></script></body></html>
