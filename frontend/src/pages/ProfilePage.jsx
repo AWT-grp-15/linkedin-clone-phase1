@@ -145,23 +145,13 @@ function ProfilePage() {
             </div>
 
             <div className="profile-avatar-row">
-              <div className="profile-avatar-large">
+              <div className="profile-page-avatar">
                 {profileUser.avatar ? (
                   <img src={profileUser.avatar} alt={profileUser.firstName} />
                 ) : (
                   <span>{getInitials(profileUser)}</span>
                 )}
               </div>
-              {isSelf && (
-                <button
-                  type="button"
-                  className="btn-edit-profile-icon"
-                  onClick={() => setShowEditModal(true)}
-                  title="Edit profile"
-                >
-                  ✏️ Edit Profile
-                </button>
-              )}
             </div>
 
             <div className="profile-details-content">

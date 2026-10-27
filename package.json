@@ -4,10 +4,13 @@
   "private": true,
   "description": "Full-stack LinkedIn clone separated into frontend and backend",
   "scripts": {
+    "dev": "concurrently -n \"backend,frontend\" -c \"cyan,magenta\" \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "npm --prefix backend run dev",
     "dev:frontend": "npm --prefix frontend run dev",
-    "dev": "npm --prefix backend run dev",
     "start": "npm --prefix backend start",
-    "install:all": "npm install --prefix backend && npm install --prefix frontend"
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
   }
 }
